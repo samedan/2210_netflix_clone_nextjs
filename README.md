@@ -1,4 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Original Git :
+
+https://github.com/kulkarniankita/discover-videos
+
+## Original tutorial
+
+https://www.udemy.com/course/complete-nextjs-developer-zero-to-mastery/
 
 ## Getting Started
 
