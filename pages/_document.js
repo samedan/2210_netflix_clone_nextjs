@@ -10,9 +10,10 @@ export default function Document() {
         href="https://fonts.googleapis.com"
         crossOrigin="true"
       />
+
       <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap"
         rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
       />
       <body>
         <Main />
