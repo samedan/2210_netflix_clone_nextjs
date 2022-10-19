@@ -1,0 +1,174 @@
+{
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ln1hWfktdd2SlbmagpOq3SAhdac",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "16u7oeK0O90"
+      },
+      "snippet": {
+        "publishedAt": "2022-10-18T16:00:01Z",
+        "channelId": "UCuaFvcY4MhZY3U43mMt1dYQ",
+        "title": "Diary Of A Wimpy Kid: Rodrick Rules | Official Trailer | Disney+",
+        "description": "Break the rules⚠️ Diary of a #WimpyKid: Rodrick Rules, an all-new Original movie is streaming this December 2 exclusively on ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/16u7oeK0O90/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/16u7oeK0O90/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/16u7oeK0O90/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Walt Disney Studios",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-10-18T16:00:01Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "vFbyp3NqNUp6apfKVJSszrWeuVc",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "bKh2G73gCCs"
+      },
+      "snippet": {
+        "publishedAt": "2022-09-21T12:47:16Z",
+        "channelId": "UC_976xMxPgzIa290Hqtk-9g",
+        "title": "Strange World | Official Trailer",
+        "description": "Explore the adventures beyond our world in the NEW TRAILER for Disney's #StrangeWorld, in theaters November 23! The ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/bKh2G73gCCs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/bKh2G73gCCs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/bKh2G73gCCs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Walt Disney Animation Studios",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-09-21T12:47:16Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "BRP5cY6bGc6H3nIa8KKJ4T2SiB8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "KK8FHdFluOQ"
+      },
+      "snippet": {
+        "publishedAt": "2019-12-05T14:00:06Z",
+        "channelId": "UCuaFvcY4MhZY3U43mMt1dYQ",
+        "title": "Disney&#39;s Mulan | Official Trailer",
+        "description": "When the Emperor of China issues a decree that one man per family must serve in the Imperial Army to defend the country from ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/KK8FHdFluOQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/KK8FHdFluOQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/KK8FHdFluOQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Walt Disney Studios",
+        "liveBroadcastContent": "none",
+        "publishTime": "2019-12-05T14:00:06Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "VJe8q7oPs7pAEvz-cxGIryIZVpY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "j4fyrqoZddY"
+      },
+      "snippet": {
+        "publishedAt": "2022-09-10T00:39:29Z",
+        "channelId": "UCP6nJ-Elnfnpjv6HQRsv1Cw",
+        "title": "A Pequena Sereia | Trailer Oficial Legendado",
+        "description": "Quero viver, não quero ser mais desse mar... #APequenaSereia, em 25 de maio nos cinemas.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/j4fyrqoZddY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/j4fyrqoZddY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/j4fyrqoZddY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Walt Disney Studios BR",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-09-10T00:39:29Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "QGE5N4jUg9941T-tARcFHwM_t2Q",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "gJfQxuwbPFY"
+      },
+      "snippet": {
+        "publishedAt": "2022-08-24T16:30:04Z",
+        "channelId": "UCfrLPVjIxAJzNFu_TsevXVw",
+        "title": "Pinocchio - Bande-annonce officielle (VF) | Disney+",
+        "description": "Le grand classique Pinocchio prend vie dans une nouvelle version live action ! Découvrez la dernière bande-annonce de ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/gJfQxuwbPFY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/gJfQxuwbPFY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/gJfQxuwbPFY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Disney Plus FR",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-08-24T16:30:04Z"
+      }
+    }
+  ]
+}
