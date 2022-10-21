@@ -6,6 +6,11 @@ https://github.com/kulkarniankita/discover-videos
 
 https://www.udemy.com/course/complete-nextjs-developer-zero-to-mastery/
 
+## Magic login
+
+https://magic.link/
+https://magic.link/docs/auth/login-methods/email/integration/web
+
 ## Getting Started
 
 First, run the development server:
