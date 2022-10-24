@@ -17,9 +17,17 @@ const NavBar = () => {
   useEffect(() => {
     async function getUsername() {
       try {
+        // const { email, issuer } = await magic.user.getMetadata();
         const { email } = await magic.user.getMetadata();
+        try {
+          const { didToken } = await magic.user.getIdToken();
+          console.log("didToken from Magic on Navbar.js");
+          console.log({ didToken });
+        } catch (error) {
+          console.error("error getting metadata", error);
+        }
+
         if (email) {
-          console.log(email);
           setUsername(email);
         }
       } catch (error) {

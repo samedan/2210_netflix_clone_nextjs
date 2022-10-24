@@ -6,10 +6,30 @@ https://github.com/kulkarniankita/discover-videos
 
 https://www.udemy.com/course/complete-nextjs-developer-zero-to-mastery/
 
+## My git
+
+https://github.com/samedan/2210_netflix_clone_nextjs
+
+## DEV Data - not running on that Youtube API limit (money)
+
+use videos.json, set .env.local to use DEVELOPMENT=true
+
 ## Magic login
 
 https://magic.link/
 https://magic.link/docs/auth/login-methods/email/integration/web
+
+## MAGIC Server Side API
+
+https://magic.link/docs/auth/api-reference/server-side-sdks/node
+
+## Decode/Encode JWT
+
+https://github.com/auth0/node-jsonwebtoken#readme
+
+## Incremental Static Regeneration
+
+https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration
 
 ## Getting Started
 

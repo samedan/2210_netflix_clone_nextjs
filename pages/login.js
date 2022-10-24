@@ -49,7 +49,8 @@ const Login = () => {
 
           if (didToken) {
             // setIsLoading(false);
-            console.log("Login, succesfully");
+            console.log("didToken from Magic");
+            console.log({ didToken });
             router.push("/");
           }
         } catch {
