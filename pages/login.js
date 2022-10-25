@@ -29,7 +29,7 @@ const Login = () => {
 
   const handleOnChangeEmail = (e) => {
     setUserMsg("");
-    console.log("event", e);
+
     const email = e.target.value;
     setEmail(email);
   };
@@ -39,30 +39,40 @@ const Login = () => {
     e.preventDefault();
 
     if (email) {
-      if (email === "same.dan@gmail.com") {
-        setIsLoading(true);
-        // log in a user by their email
-        try {
-          const didToken = await magic.auth.loginWithMagicLink({
-            email: email,
-          });
+      setIsLoading(true);
+      // log in a user by their email
+      try {
+        const didToken = await magic.auth.loginWithMagicLink({
+          email: email,
+        });
 
-          if (didToken) {
-            // setIsLoading(false);
-            console.log("didToken from Magic");
-            console.log({ didToken });
+        if (didToken) {
+          // setIsLoading(false);
+          console.log("didToken from Magic");
+          console.log({ didToken });
+          const response = await fetch("/api/login", {
+            method: "POST",
+            headers: {
+              Authorization: `Bearer ${didToken}`,
+              "Content-Type": "application/json",
+            },
+          });
+          const loggedInResponse = await response.json();
+          if (loggedInResponse.done) {
+            console.log("cookie created");
+            console.log({ loggedInResponse });
             router.push("/");
+          } else {
+            setIsLoading(false);
+            setUserMsg("Something went wrong logging in");
           }
-        } catch {
-          // Handle errors if required!
-          setIsLoading(false);
-          console.error("Smth went wrong", error);
         }
-        // route to dashboard
-      } else {
+      } catch {
+        // Handle errors if required!
         setIsLoading(false);
-        console.log("Something went wrong logging in");
+        console.error("Smth went wrong", error);
       }
+      // route to dashboard
     } else {
       setIsLoading(false);
       // show user message
