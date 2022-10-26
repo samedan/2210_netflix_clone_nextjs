@@ -7,26 +7,16 @@ import Image from "next/image";
 import { magic } from "../../lib/magic-client";
 
 const NavBar = () => {
-  // const { username } = props;
-
   const [showDropdown, setShowDropdown] = useState(false);
   const [username, setUsername] = useState("");
-
   const router = useRouter();
 
   useEffect(() => {
     async function getUsername() {
       try {
-        // const { email, issuer } = await magic.user.getMetadata();
-        const { email } = await magic.user.getMetadata();
-        try {
-          const { didToken } = await magic.user.getIdToken();
-          console.log("didToken from Magic on Navbar.js");
-          console.log({ didToken });
-        } catch (error) {
-          console.error("error getting metadata", error);
-        }
-
+        const { email, issuer } = await magic.user.getMetadata();
+        const didToken = await magic.user.getIdToken();
+        console.log({ didToken });
         if (email) {
           setUsername(email);
         }
@@ -54,6 +44,7 @@ const NavBar = () => {
 
   const handleSignout = async (e) => {
     e.preventDefault();
+
     try {
       await magic.user.logout();
       console.log(await magic.user.isLoggedIn());
@@ -103,7 +94,6 @@ const NavBar = () => {
                   <a className={styles.linkName} onClick={handleSignout}>
                     Sign out
                   </a>
-
                   <div className={styles.lineWrapper}></div>
                 </div>
               </div>

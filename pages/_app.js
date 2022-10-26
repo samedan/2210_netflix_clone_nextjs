@@ -10,17 +10,20 @@ function MyApp({ Component, pageProps }) {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    // const handleLoggedIn = async () => {
-    //   const isLoggedIn = await magic.user.isLoggedIn();
-    //   if (isLoggedIn) {
-    //     // route to /
-    //     router.push("/");
-    //   } else {
-    //     // route to /login
-    //     router.push("/login");
-    //   }
-    // };
-    // handleLoggedIn();
+    console.log("process.env.NEXT_PUBLIC_JWT_SECRET on_app.js");
+    console.log(process.env.NEXT_PUBLIC_JWT_SECRET);
+    const handleLoggedIn = async () => {
+      // setIsLoading(true);
+      const isLoggedIn = await magic.user.isLoggedIn();
+      if (isLoggedIn) {
+        // route to /
+        router.push("/");
+      } else {
+        // route to /login
+        router.push("/login");
+      }
+    };
+    handleLoggedIn();
   }, []);
 
   useEffect(() => {
