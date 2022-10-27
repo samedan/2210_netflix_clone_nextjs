@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import styles from "./card.module.css";
 
 const Card = (props) => {
-  const { imgUrl, size, id } = props;
+  const { imgUrl, size, id, shouldScale } = props;
 
   const [imgSrc, setImgSrc] = useState(imgUrl);
   const classMap = {
@@ -23,12 +23,15 @@ const Card = (props) => {
   };
 
   const scale = id === 0 ? { scaleY: 1.1 } : { scale: 1.1 };
+  // only shoudlHover when shouldScale is true
+  const shouldHover = shouldScale && { whileHover: { ...scale } };
 
   return (
     <div className={styles.container}>
       <motion.div
         className={cls(styles.imgMotionWrapper, classMap[size])}
-        whileHover={{ ...scale }}
+        // whileHover={{ ...scale }}
+        {...shouldHover}
       >
         <Image
           src={imgSrc}

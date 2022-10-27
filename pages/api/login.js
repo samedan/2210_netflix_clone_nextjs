@@ -15,7 +15,7 @@ export default async function login(req, res) {
       const token = jwt.sign(
         {
           ...metadata,
-          iat: Math.floor(Date.now() / 1000),
+          iat: Math.floor(Date.now() / 1000 - 1 * 60 * 60),
           exp: Math.floor(Date.now() / 1000 + 7 * 24 * 60 * 60),
           "https://hasura.io/jwt/claims": {
             "x-hasura-allowed-roles": ["user", "admin"],
@@ -25,6 +25,8 @@ export default async function login(req, res) {
         },
         process.env.JWT_SECRET_HASURA_GRAPHQL_JWT_SECRET
       );
+
+      console.log({ token });
 
       const isNewUserQuery = await isNewUser(token, metadata.issuer);
       isNewUserQuery && (await createNewUser(token, metadata));

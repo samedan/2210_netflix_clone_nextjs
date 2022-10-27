@@ -10,8 +10,6 @@ function MyApp({ Component, pageProps }) {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    console.log("process.env.NEXT_PUBLIC_JWT_SECRET on_app.js");
-    console.log(process.env.NEXT_PUBLIC_JWT_SECRET);
     const handleLoggedIn = async () => {
       // setIsLoading(true);
       const isLoggedIn = await magic.user.isLoggedIn();
